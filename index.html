@@ -17,7 +17,11 @@
                     <a href="#" target="" id="masonry">Masonry</a>
                 </nav>
             </div>
-            <a href="#" class="toggleMenu">toggle</a>
+            <a href="#" class="toggleMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
             <a href="#" class="logo">CSS GRID</a>
         </header>
         <nav class="navMenu functionMenu">
@@ -391,7 +395,7 @@
             if($(window).width() <= 767) {
                 $('.toggleMenu,.topMenu a').click(function(e) {
                     e.preventDefault();
-                    $(this).toggleClass('active');
+                    $('.toggleMenu').toggleClass('active');
                     $('.topMenu').toggleClass('active');
                 });
             }
@@ -400,7 +404,7 @@
                 if($(window).width() <= 767) {
                     $('.toggleMenu,.topMenu a').click(function(e) {
                         e.preventDefault();
-                        $(this).toggleClass('active');
+                        $('.toggleMenu').toggleClass('active');
                         $('.topMenu').toggleClass('active');
                     });
                 }
